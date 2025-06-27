@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        table {
+            border-collapse: collapse;
+            margin: 20px auto;
+            width: 100%;
+            max-width: 600px;
+        }
+
+        thead tr, tbody tr {
+            display: grid;
+            grid-template-columns: 1fr 3fr 1fr 1fr;
+        }
+
+        th, td {
+            padding: 12px;
+            border: 1px solid #ccc;
+            text-align: center;
+        }
+
+        thead {
+            background-color: #f5f5f5;
+            font-weight: bold;
+        }
+
+        tbody tr:hover {
+            background-color: #f0efef;
+        }
+    </style>
+</head>
+<body>
+    <h1>Thời khóa biểu</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Thứ</th>
+                <th>Môn học</th>
+                <th>Giờ học</th>
+                <th>Phòng học</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>2</td>
+                <td>Logic học</td>
+                <td>1-3</td>
+                <td>X10.03</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Tâm lý học</td>
+                <td>7-9</td>
+                <td>N09.03</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Toán cao cấp</td>
+                <td>10-12</td>
+                <td>N06.03</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
