@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        .subject-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 20px;
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+        .subject-list li {
+            border: 1px solid #b12424;
+            padding: 15px;
+            text-align: center;
+            border-radius: 8px;
+            background-color: #eacece;
+            font-size: 1rem;
+            transition: box-shadow 0.2s ease;
+        }
+        .subject-list li:hover {
+            box-shadow: 0px 4px 15px rgba(0,0,0,.1);
+        }
+    </style>
+</head>
+<body>
+    <h1>Môn học yêu thích</h1>
+    <ul class="subject-list">
+        <li>Toán cao cấp 1</li>
+        <li>Logic học</li>
+        <li>Tâm lý học đại cương</li>
+        <li>Nhập môn lập trình</li>
+        <li>Đồ họa</li>
+        <li>Kỹ năng giao tiếp</li>
+    </ul>
+</body>
+</html>
