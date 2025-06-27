@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(rgb(248, 222, 222), rgb(166, 210, 244));
+            min-height: 100vh;
+            display: block;
+            margin: auto;
+        }
+        h2{
+            display: flex;
+            justify-content: space-around; 
+            align-items: center;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-around; 
+            align-items: center;
+            background-color: rgba(255,255,255,0.8);
+            padding: 15px;
+        }
+        .navbar a {
+            text-decoration: none;
+            font-size: 1rem;
+            color: #333;
+            padding: 10px 20px;
+            position: relative;
+            transition: color 0.3s ease;
+        }
+        .navbar a::after {
+            content: ""; 
+            position: absolute;
+            left: 50%; 
+            bottom: 0;
+            width: 0%; 
+            height: 2px;
+            background-color: #007BFF;
+            transition: all 0.3s ease;
+        }
+        .navbar a:hover {
+            color: #007BFF;
+        }
+        .navbar a:hover::after {
+            left: 0;
+            width: 100%; 
+        }
+    </style>
+</head>
+<body>
+    <h2>ĐẠI HỌC CÔNG NGHIỆP TP. HỒ CHÍ MINH</h2>
+    <nav class="navbar">
+        <a href="https://sv.iuh.edu.vn/sinh-vien-dang-nhap.html">Đăng nhập sinh viên</a>
+        <a href="https://iuh.edu.vn/">Trang chủ</a>
+        <a href="https://iuh.edu.vn/vi/gioi-thieu-chung-s87.html">Giới thiệu</a>
+        <a href="https://iuh.edu.vn/vi/contact-us-s90.html">Liên hệ</a>
+    </nav>
+</body>
+</html>
