@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            min-height: 100vh;
+        }
+        .sidebar {
+            background-color: #e0f7fa;
+            padding: 30px;
+        }
+        .content {
+            background-color: #f5f5f5;
+            padding: 30px;
+        }
+        h2 {
+            font-size: 1.5rem;
+            border-bottom: 2px solid #333;
+            padding-bottom: 2px;
+        }
+        h3 {
+            font-size: 1.2rem;
+            margin-bottom: 5px;
+        }
+        img {
+            display: block;
+            margin: 10px auto;
+            width: 150px;
+            height: 160px;
+            border-radius: 5px;
+        }
+        .section {
+            margin-bottom: 25px;
+        }
+        .skill-item {
+            display: flex;
+            align-items: center;
+            margin: 5px 0;
+        }
+        .skill-item span {
+            margin-left: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h2>Thông tin cá nhân</h2>
+            <img src="Hinhanh/hinhnen.jpg" alt="Ảnh cá nhân">
+            <p><strong>Họ tên:</strong> Kiều Phan Tuyết Nhi</p>
+            <p><strong>Email:</strong> knhi411205@gmail.com</p>
+            <p><strong>Điện thoại:</strong> 0815638838</p>
+            <p><strong>Địa chỉ:</strong> Gò Vấp, TP.HCM</p>
+            <div class="section">
+                <h2>Kỹ năng</h2>
+                <div class="skill-item">✅<span>Tin học văn phòng</span></div>
+                <div class="skill-item">✅<span>Tiếng Anh</span></div>
+                <div class="skill-item">✅<span>Marketing căn bản</span></div>
+                <div class="skill-item">✅<span>Quay, dựng content</span></div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="section">
+                <h2>Học vấn</h2>
+                <h3>Trường Đại học Công Nghiệp TP.HCM (2023-2027)</h3>
+                <p>Chuyên ngành: Thương Mại Điện Tử</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
