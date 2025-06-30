@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center; 
+            align-items: center;    
+            height:100vh;
+            background: linear-gradient(135deg, #f86767, #764ba2);
+        }
+        form {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow:0px 4px 12px rgba(0,0,0,.2);
+            text-align: center;
+            width: 250px;
+        }
+        input {
+            width:100%; 
+            padding:8px;
+            margin:8px 0;
+            border-radius:4px;
+            border:1px solid #ccc;
+            box-sizing: border-box;
+            box-shadow:0px 1px 3px rgba(0,0,0,.1);
+            outline: none;
+        }
+        input:focus {
+            border: 1px solid #e71212;
+            box-shadow:0px 0px 5px rgba(160, 13, 13, 0.5);
+        }
+        button {
+            padding:8px;
+            border-radius:4px;
+            border:none;
+            background:#d63b0c;
+            color:#fff;
+            cursor:pointer;
+            width:100%;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background:#320404;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h2>Đăng nhập</h2>
+        <input type="text" placeholder="Username"><br>
+        <input type="password" placeholder="Password"><br>
+        <button>Login</button>
+    </form>
+</body>
+</html>
