@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        h2 {
+            text-align: center;
+        }
+        .event-list {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 10px;
+            max-width: 1000px;
+            margin: 20px auto;
+        }
+        .event {
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+        .event .date {
+            font-weight: bold;
+        }
+        .event.today {
+            background-color: #ffe082;
+        }
+        .event.upcoming {
+            background-color: #c8e6c9;
+        }
+        .event.passed {
+            background-color: #e0e0e0;
+        }
+        .legend {
+            max-width: 600px;
+            margin: 20px auto;
+        }
+        .legend h3 {
+            font-size: 1rem;
+        }
+        .legend-item {
+            display: flex;
+            align-items: center;
+            margin: 5px 0;
+        }
+        .legend-color {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            margin-right: 8px;
+            border-radius: 3px;
+        }
+        .legend .today { background-color: #ffe082; }
+        .legend .upcoming { background-color: #c8e6c9; }
+        .legend .passed { background-color: #e0e0e0; }
+        /* Responsive: Khi màn hình hẹp thì tự động chia ít cột hơn */
+        @media (max-width: 768px) {
+            .event-list {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+        @media (max-width: 480px) {
+            .event-list {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+<h2>Lịch sự kiện</h2>
+    <ul class="event-list">
+        <li class="event passed">
+            <span class="date">20/06/2025</span><br>Hội thảo công nghệ AI
+        </li>
+        <li class="event today">
+            <span class="date">24/06/2025</span><br>Workshop phát triển website
+        </li>
+        <li class="event upcoming">
+            <span class="date">30/06/2025</span><br>Triển lãm công nghệ mới
+        </li>
+        <li class="event passed">
+            <span class="date">18/06/2025</span><br>Hội thảo phần mềm
+        </li>
+        <li class="event upcoming">
+            <span class="date">29/06/2025</span><br>Gặp mặt đối tác
+        </li>
+        <li class="event passed">
+            <span class="date">17/06/2025</span><br>Khóa học AI
+        </li>
+        <li class="event today">
+            <span class="date">24/06/2025</span><br>Hội thảo UX/UI
+        </li>
+    </ul>
+    <div class="legend">
+        <h3>Chú thích</h3>
+        <div class="legend-item"><span class="legend-color passed"></span> Sự kiện đã diễn ra</div>
+        <div class="legend-item"><span class="legend-color today"></span> Sự kiện gần nhất</div>
+        <div class="legend-item"><span class="legend-color upcoming"></span> Sự kiện sắp diễn ra</div>
+    </div>
+</body>
+</html>
