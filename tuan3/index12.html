@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background: linear-gradient(135deg, #ffffff, #d6eff1e0);
+            min-height: 100vh;
+        }
+        h3 {
+            text-align: center;
+        }
+        .group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin: 5px 0 15px;
+        }
+        textarea {
+            width: 100%;
+            padding: 5px;
+            box-sizing: border-box;
+        }
+        button {
+            padding: 8px 15px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #898cc4;
+        }
+        button{
+            background: rgb(200, 200, 239);
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h3>Form Khảo Sát Ý Kiến Cho Dự Án Shop Thời Trang</h3>
+        <div>Giới tính của bạn?</div>
+        <div class="group">
+            <label><input type="radio" name="sex"> Nam</label>
+            <label><input type="radio" name="sex"> Nữ</label>
+            <label><input type="radio" name="sex"> Khác</label>
+        </div>
+        <div>Bạn thường mua quần áo mới bao lâu một lần?</div>
+        <div class="group">
+            <label><input type="checkbox" name="time"> Hàng tháng</label>
+            <label><input type="checkbox" name="time"> Mỗi 3–6 tháng</label>
+            <label><input type="checkbox" name="time"> Khi có nhu cầu</label>
+            <label><input type="checkbox" name="time"> Khi có ưu đãi, khuyến mãi</label>
+        </div>
+        <div>Bạn thường mua quần áo ở đâu?</div>
+        <div class="group">
+            <label><input type="checkbox" name="where"> Cửa hàng truyền thống</label>
+            <label><input type="checkbox" name="where"> Mua online trên website/app</label>
+            <label><input type="checkbox" name="where"> Mạng xã hội (Instagram, Facebook)</label>
+            <label><input type="checkbox" name="where"> Shop thời trang địa phương</label>
+        </div>
+        <div>Phong cách bạn thích?</div>
+        <div class="group">
+            <label><input type="radio" name="style"> Năng động, trẻ trung</label>
+            <label><input type="radio" name="style"> Thanh lịch, tối giản</label>
+            <label><input type="radio" name="style"> Sang trọng, cao cấp</label>
+            <label><input type="radio" name="style"> Thể thao, thoải mái</label>
+        </div>
+        <div>Góp ý của bạn để shop thời trang phục vụ tốt hơn trong tương lai:</div>
+        <textarea rows="7"></textarea><br><br>
+        <button type="submit">Gửi</button>
+    </form>
+</body>
+</html>
