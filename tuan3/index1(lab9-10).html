@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background: #f0f0f0;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .portfolio {
+      display: grid;
+      grid-template-columns: 1fr; 
+      gap: 20px;
+    }
+    .project {
+      background: #fff;
+      padding: 15px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    .project h3 {
+      margin-bottom: 8px;
+    }
+    @media (min-width: 600px) {
+      .portfolio {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (min-width: 900px) {
+      .portfolio {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+  </style>
+</head>
+<body>
+    <h1>Portfolio Cá Nhân</h1>
+    <div class="portfolio">
+        <div class="project">
+            <h3>Dự án 1</h3>
+            <p>Giao diện bán hàng mini.</p>
+        </div>
+        <div class="project">
+            <h3>Dự án 2</h3>
+            <p>Todo List dùng JavaScript.</p>
+        </div>
+        <div class="project">
+            <h3>Dự án 3</h3>
+            <p>Landing page giới thiệu.</p>
+        </div>
+        <div class="project">
+            <h3>Dự án 4</h3>
+            <p>Blog cá nhân responsive.</p>
+        </div>
+    </div>
+</body>
+</html>
