@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: sans-serif;
+            padding: 20px;
+            background: #eee;
+        }
+        .cv {
+            display: grid;
+            grid-template-areas:
+            "info"
+            "skills"
+            "education"
+            "experience";
+            gap: 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+        .info       { grid-area: info; background: #fff; padding: 15px; }
+        .skills     { grid-area: skills; background: #fff; padding: 15px; }
+        .education  { grid-area: education; background: #fff; padding: 15px; }
+        .experience { grid-area: experience; background: #fff; padding: 15px; }
+        h2 {
+            margin-bottom: 10px;
+            font-size: 20px;
+            border-bottom: 1px solid #ccc;
+        }
+        ul {
+            margin-left: 20px;
+            list-style: disc;
+        }
+        @media (min-width: 768px) {
+            .cv {
+                grid-template-columns: 1fr 1fr;
+                grid-template-areas:
+                "info education"
+                "skills experience";
+            }
+        }
+  </style>
+</head>
+<body>
+    <div class="cv">
+        <div class="info">
+            <h2>Thông tin</h2>
+            <p>Họ tên: Kiều Phan Tuyết Nhi</p>
+            <p>Email: knhi411205@gmail.com</p>
+            <p>Điện thoại: 0815638838</p>
+        </div>
+        <div class="skills">
+            <h2>Kỹ năng</h2>
+            <ul>
+                <li>HTML, CSS</li>
+                <li>Lập trình web</li>
+                <li>Marketing cơ bản</li>
+            </ul>
+        </div>
+        <div class="education">
+            <h2>Học vấn</h2>
+            <p>Đại học Công Nghiệp TP.HCM</p>
+            <p>Ngành: Thương mại điện tử</p>
+            <p>2023 - 2027</p>
+        </div>
+        <div class="experience">
+            <h2>Kinh nghiệm</h2>
+            <p>Intern tại Công ty ABC</p>
+            <p>Thực tập ReactJS, làm giao diện web cho nội bộ.</p>
+        </div>
+    </div>
+</body>
+</html>
