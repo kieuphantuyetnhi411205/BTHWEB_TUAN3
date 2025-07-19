@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: sans-serif;
+            padding: 20px;
+            background: #ffe1e1;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .landing-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 900px;
+            margin: auto;
+        }
+        .product-image img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+        .product-content {
+            max-width: 500px;
+            text-align: center;
+        }
+        .product-content h2 {
+            margin-bottom: 10px;
+            font-size: 24px;
+            color: #d9534f;
+        }
+        .product-content p {
+            margin-bottom: 15px;
+            line-height: 1.5;
+        }
+        .cta-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .cta-button:hover {
+            background: #218838;
+        }
+        @media (min-width: 768px) {
+            .landing-container {
+                flex-direction: row;
+                justify-content: space-between;
+                text-align: left;
+            }
+            .product-content {
+                text-align: left;
+            }
+        }
+  </style>
+</head>
+<body>
+    <header>
+        <h1>Giới Thiệu Sản Phẩm Mới</h1>
+    </header>
+    <section class="landing-container">
+        <div class="product-image">
+            <img src="hinhanh/tintuc.jpg" alt="Hình sản phẩm" />
+        </div>
+        <div class="product-content">
+            <h2>Sản phẩm thông minh 2025</h2>
+            <p>Sản phẩm tích hợp công nghệ AI tiên tiến, giúp bạn tiết kiệm thời gian, tối ưu công việc và nâng cao trải nghiệm cuộc sống hằng ngày.</p>
+            <a href="#" class="cta-button">Mua Ngay</a>
+        </div>
+    </section>
+</body>
+</html>
