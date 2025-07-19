@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background: #f0f0f0;
+            padding: 20px;
+        }
+        .blog-layout {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .new {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            min-height: 200px;
+            order: 1;
+        }
+        .new img{
+            height: 300px;
+        }
+        .new h2 {
+            margin-bottom: 10px;
+            color: #d9534f;
+        }
+        .sub-news {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            order: 2;
+        }
+        .sub-news .news-item {
+            background: white;
+            padding: 15px;
+            border-radius: 6px;
+            min-height: 100px;
+        }
+        @media (min-width: 768px) {
+            .blog-layout {
+                flex-direction: row;
+            }
+            .new {
+                flex: 2;
+                order: 1;
+            }
+            .sub-news {
+                flex: 1;
+                order: 2;
+            }
+        }
+  </style>
+</head>
+<body>
+    <div class="blog-layout">
+    <div class="new">
+      <h2>Tin Nổi Bật: Top 10 Xu Hướng Công Nghệ Chiến Lược Năm 2025 Theo Báo Cáo Của Gartner</h2>
+      <p>Gartner,Inc. là một công ty nghiên cứu và tư vấn hàng đầu thế giới trong lĩnh vực công nghệ thông tin, nổi tiếng với những phân tích, dự đoán và đánh giá sâu sắc về xu hướng công nghệ và giải pháp doanh nghiệp. ...<a href="https://gumisolutions.com/top-10-xu-huong-cong-nghe-chien-luoc-nam-2025-theo-bao-cao-cua-gartner/">Đọc thêm</a></p>
+      <img src="hinhanh/tintuc.jpg" alt="">
+    </div>
+    <div class="sub-news">
+      <div class="news-item">
+        <h3>Startup Việt gọi vốn thành công</h3>
+        <p>Startup chuyên về nông nghiệp công nghệ cao đã nhận được 5 triệu USD từ quỹ đầu tư Singapore.</p>
+      </div>
+      <div class="news-item">
+        <h3>Top 5 ngôn ngữ lập trình 2025</h3>
+        <p>Python vẫn giữ vững ngôi đầu, TypeScript vươn lên mạnh mẽ nhờ dự án doanh nghiệp.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
