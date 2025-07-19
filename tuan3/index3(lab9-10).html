@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            padding: 30px;
+            background-color: #f7f7f7;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .booking-form {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .form-left input,
+        .form-left select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-right textarea {
+            width: 100%;
+            height: 100%;
+            min-height: 150px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            resize: vertical;
+        }
+        .submit-btn {
+            grid-column: span 2;
+            text-align: center;
+        }
+        .submit-btn button {
+            padding: 10px 30px;
+            background-color: #d9534f;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .submit-btn button:hover {
+            background-color: #c9302c;
+        }
+        @media (min-width: 768px) {
+        .booking-form {
+            grid-template-columns: 1fr 1fr;
+        }
+        .submit-btn {
+            grid-column: 1 / 3;
+        }
+        }
+    </style>
+</head>
+<body>
+    <h1>Đặt Bàn Nhà Hàng</h1>
+    <form class="booking-form">
+        <div class="form-left">
+            <input type="text" placeholder="Họ và tên" required>
+            <input type="tel" placeholder="Số điện thoại" required>
+            <input type="email" placeholder="Email (nếu có)">
+            <input type="date" required>
+            <input type="time" required>
+            <select required>
+                <option value="">Chọn số người</option>
+                <option>1 - 2 người</option>
+                <option>3 - 5 người</option>
+                <option>6 - 10 người</option>
+                <option>Trên 10 người</option>
+            </select>
+        </div>
+            <div class="form-right">
+                <textarea placeholder="Yêu cầu đặc biệt (nếu có)..."></textarea>
+            </div>
+            <div class="submit-btn">
+                <button type="submit">Đặt Bàn</button>
+        </div>
+    </form>
+</body>
+</html>
