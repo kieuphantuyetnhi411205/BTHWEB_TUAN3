@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            background-color: #333;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+        .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        .menu-toggle {
+            font-size: 1.8em;
+            cursor: pointer;
+            display: block; 
+        }
+        .nav-links {
+            display: none; 
+            flex-direction: column;
+            background-color: #444;
+            width: 100%;
+        }
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            display: block;
+            border-top: 1px solid #555;
+        }
+        .nav-links a:hover {
+            background-color: #555;
+        }
+        .nav-links.active {
+            display: flex;
+        }
+        @media (min-width: 768px) {
+            .menu-toggle {
+                display: block;
+            }
+            .nav-links {
+                display: flex !important;
+                flex-direction: row;
+                background: none;
+                width: auto;
+            }
+            .nav-links a {
+                border: none;
+                padding: 0 15px;
+            }
+            .nav-links a:hover {
+                background-color: transparent;
+                text-decoration: underline;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">MyWebsite</div>
+        <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    </div>
+    <div class="nav-links" id="nav-links">
+        <a href="#">Trang chủ</a>
+        <a href="#">Giới thiệu</a>
+        <a href="#">Sản phẩm</a>
+        <a href="#">Liên hệ</a>
+    </div>
+    <script>
+        document.getElementById("menu-toggle").addEventListener("click", function () {
+            document.getElementById("nav-links").classList.toggle("active");
+        });
+    </script>
+</body>
+</html>
