@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            padding: 5vw;
+            background: #f9f9f9;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 3vw;
+            font-size: clamp(24px, 3vw, 36px);
+        }
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 2rem;
+        }
+        .member-card {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+        .member-card:hover {
+            transform: translateY(-5px);
+        }
+        .member-card img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+        .member-card h3 {
+            margin: 20px 0 5px;
+            font-size: 1.1em;
+        }
+        .member-card p {
+            color: #555;
+            font-size: 0.95em;
+        }
+  </style>
+</head>
+<body>
+    <h1>Giới Thiệu Nhóm TXT</h1>
+    <div class="team-grid">
+        <div class="member-card">
+            <img src="hinhanh/Soobin.jpg" alt="Soobin">
+            <h3>Soobin</h3>
+            <p>Trưởng nhóm, Vocalist</p>
+        </div>
+        <div class="member-card">
+            <img src="hinhanh/Yeonjun.jpg" alt="Yeonjun">
+            <h3>Yeonjun</h3>
+            <p>Main Dancer, Rapper, Vocalist</p>
+        </div>
+        <div class="member-card">
+            <img src="hinhanh/Beomgyu.jpg" alt="Beomgyu">
+            <h3>Beomgyu</h3>
+            <p>Vocalist, Dancer, Visual</p>
+        </div>
+        <div class="member-card">
+            <img src="hinhanh/Taehyun.jpg" alt="Taehyun">
+            <h3>Taehyun</h3>
+            <p>Main Vocalist</p>
+        </div>
+        <div class="member-card">
+            <img src="hinhanh/HueningKai.jpg" alt="HueningKai">
+            <h3>Huening Kai</h3>
+            <p>Vocalist, Maknae</p>
+        </div>
+    </div>
+</body>
+</html>
